@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نمونه‌کارهای طراحی سایت من</title>
+  <meta name="description" content="نمونه‌کارهای طراحی سایت توسط [نام شما]" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>سلام! من [نام شما] هستم</h1>
+      <p class="subtitle">طراح و توسعه‌دهنده وب — ساخت سایت‌های زیبا و کاربردی</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="projects">
+      <h2>نمونه‌کارها</h2>
+      <div class="grid">
+
+        <article class="card">
+          <img src="images/project1.jpg" alt="پروژه ۱">
+          <h3>سایت فروشگاهی</h3>
+          <p>طراحی و توسعه‌ی سایت فروشگاهی واکنش‌گرا با HTML, CSS و JavaScript</p>
+          <a href="#" class="btn">مشاهده پروژه</a>
+        </article>
+
+        <article class="card">
+          <img src="images/project2.jpg" alt="پروژه ۲">
+          <h3>سایت شرکتی</h3>
+          <p>سایت معرفی خدمات شرکت با طراحی مدرن و سبک</p>
+          <a href="#" class="btn">مشاهده پروژه</a>
+        </article>
+
+        <article class="card">
+          <img src="images/project3.jpg" alt="پروژه ۳">
+          <h3>لندینگ پیج تبلیغاتی</h3>
+          <p>صفحه فرود جذاب برای معرفی محصول یا کمپین تبلیغاتی</p>
+          <a href="#" class="btn">مشاهده پروژه</a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> [نام شما] | طراحی و توسعه با ♥</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
