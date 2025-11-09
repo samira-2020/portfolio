@@ -1,3 +1,12 @@
+
+/* استفاده از فونت فارسی و تنظیمات پایه */
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -55,3 +64,100 @@
   </script>
 </body>
 </html>
+
+/* ساختار عمومی */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* بخش بالایی (هدر) */
+.hero {
+  background: white;
+  text-align: center;
+  padding: 80px 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.hero .subtitle {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* عنوان هر بخش */
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0077ff;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* گرید نمونه‌کارها */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 15px;
+  font-size: 1.2rem;
+}
+.card p {
+  margin: 0 15px 20px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* دکمه */
+.btn {
+  display: inline-block;
+  margin: 0 15px 20px;
+  padding: 10px 16px;
+  background: #0077ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #005fd1;
+}
+
+/* فوتر */
+.footer {
+  text-align: center;
+  padding: 25px;
+  color: #666;
+  background: #f5f5f5;
+  font-size: 0.9rem;
+}
